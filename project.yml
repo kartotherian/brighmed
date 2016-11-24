@@ -23,5 +23,7 @@ source: "tmsource:///home/user/path/to/meddo"
 styles:
   - style.mss
   - water.mss
+  - building.mss
 layers:
   - water
+  - building
