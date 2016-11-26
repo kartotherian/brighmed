@@ -4,8 +4,8 @@ _prefs:
 scale: 1
 metatile: 1
 interactivity_layer: ''
-name: OSM Bright
-description: OSM Bright for Wikipedia with Meddo tiles
+name: Brighmed
+description: OSM for Wikipedia with Meddo tiles
 bounds: &world
   - -180
   - -85.05112877980659
