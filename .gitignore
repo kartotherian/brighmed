@@ -1,0 +1,6 @@
+localconfig.json
+localconfig.js
+tmp
+
+*.xml
+node_modules
