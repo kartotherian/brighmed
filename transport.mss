@@ -319,4 +319,24 @@
       }
     }
   }
+  /* Trains */
+  // For entirely unknown reasons, the trains have to go at the end of the file.
+  [class = 'transit'][zoom >= 10],
+  [class = 'rail'][zoom >= 6] {
+    /* By using ::casing on lower zooms and ::fill on higher zooms, we can
+       reduce the impact of roads parallel to roads hiding them at low zooms,
+       while maintaining a more appropriate ordering at high zooms */
+    #transport[zoom < 13]::casing,
+    #transport[zoom >= 13]::fill, {
+      line-width: 0.4;
+      line-color: #bbb;
+      [zoom>=16] {
+        line-width: 0.75;
+        // Hatching
+        h/line-width: 3;
+        h/line-color: #bbb;
+        h/line-dasharray: 1,31;
+      }
+    }
+  }
 }
