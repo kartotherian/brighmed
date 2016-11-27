@@ -34,7 +34,7 @@
       }
 
 
-      [brunnel = 'bridge'] {
+      [brunnel = 'bridge'][zoom >= 8] {
         line-color: black;
       }
     }
@@ -92,7 +92,7 @@
       [zoom >= 20] { line-width: @major-z20-width; }
       line-join: round;
 
-      [brunnel = 'bridge'] {
+      [brunnel = 'bridge'][zoom >= 9] {
         line-color: black;
       }
     }
@@ -134,7 +134,7 @@
       [zoom >= 20] { line-width: @medium-z20-width; }
       line-join: round;
 
-      [brunnel = 'bridge'] {
+      [brunnel = 'bridge'][zoom >= 13] {
         line-color: black;
       }
     }
@@ -177,7 +177,7 @@
         [zoom >= 20] { line-width: @minor-z20-width; }
         line-join: round;
 
-        [brunnel = 'bridge'] {
+        [brunnel = 'bridge'][zoom >= 13] {
           line-color: black;
         }
       }
@@ -221,7 +221,7 @@
         [zoom >= 20] { line-width: @minor-z20-width; }
         line-join: round;
 
-        [brunnel = 'bridge'] {
+        [brunnel = 'bridge'][zoom >= 13] {
           line-color: black;
         }
       }
@@ -277,12 +277,12 @@
         [zoom >= 20] { line-width: @service-z20-width; }
         line-join: round;
 
-        [brunnel = 'bridge'] {
+        [brunnel = 'bridge'][zoom >= 15] {
           line-color: black;
         }
       }
     }
-    #transport::fill {
+    #transport::fill[zoom >= 15] {
       ['mapnik::geometry_type' = 2]
        {
         line-color: @service-inner;
