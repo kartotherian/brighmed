@@ -24,6 +24,9 @@ styles:
   - style.mss
   - water.mss
   - building.mss
+  - transport-vars.mss
+  - transport.mss
 layers:
   - water
   - building
+  - transport
