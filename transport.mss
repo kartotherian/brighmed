@@ -303,4 +303,20 @@
       }
     }
   }
+
+  /* paths */
+  [class = 'path'][zoom >= 15],
+  [class = 'track'][zoom >= 15] {
+    #transport::fill {
+      ['mapnik::geometry_type' = 2] {
+        line-color: #cba;
+        line-width: 1;
+        line-dasharray: 2, 1;
+        [zoom >= 16] { line-width: 1.2; }
+        [zoom >= 17] { line-width: 1.5; }
+        line-join: round;
+        line-cap: round;
+      }
+    }
+  }
 }
