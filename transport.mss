@@ -118,7 +118,7 @@
   /* Medium roads */
   [class = 'secondary'][zoom >= 9],
   [class = 'tertiary'][zoom >= 11] {
-    #transport[zoom >= 13]::casing {
+    #transport::casing {
       line-color: @medium-outer;
       line-width: @medium-z9-width;
       [zoom >= 10] { line-width: @medium-z10-width; }
