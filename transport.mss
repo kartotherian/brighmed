@@ -156,11 +156,10 @@
       line-join: round;
       line-cap: round;
     }
-    }*/
   }
 
   /* minor roads */
-  [class = 'minor'][zoom >= 11] {
+  [class = 'minor'][zoom >= 12] {
     #transport::casing {
       ['mapnik::geometry_type' = 2],
       ['mapnik::geometry_type' = 3][zoom >= 16] {
@@ -201,62 +200,6 @@
         polygon-fill: @minor-inner;
       }
     }
-  }
-
-  /* minor roads */
-  [class = 'minor'][zoom >= 11] {
-    #transport::casing {
-      ['mapnik::geometry_type' = 2],
-      ['mapnik::geometry_type' = 3][zoom >= 16] {
-        line-color: @minor-outer;
-        line-width: @minor-z11-width;
-        [zoom >= 12] { line-width: @minor-z12-width; }
-        [zoom >= 13] { line-width: @minor-z13-width; }
-        [zoom >= 14] { line-width: @minor-z14-width; }
-        [zoom >= 15] { line-width: @minor-z15-width; }
-        [zoom >= 16] { line-width: @minor-z16-width; }
-        [zoom >= 17] { line-width: @minor-z17-width; }
-        [zoom >= 18] { line-width: @minor-z18-width; }
-        [zoom >= 19] { line-width: @minor-z19-width; }
-        [zoom >= 20] { line-width: @minor-z20-width; }
-        line-join: round;
-
-        [brunnel = 'bridge'][zoom >= 13] {
-          line-color: black;
-        }
-      }
-    }
-    #transport[zoom >= 13]::fill {
-      ['mapnik::geometry_type' = 2]
-       {
-        line-color: @minor-inner;
-        line-width: @minor-z13-width * (1 - 2*@minor-casing-width);
-        [zoom >= 14] { line-width: @minor-z14-width * (1 - 2*@minor-casing-width); }
-        [zoom >= 15] { line-width: @minor-z15-width * (1 - 2*@minor-casing-width); }
-        [zoom >= 16] { line-width: @minor-z16-width * (1 - 2*@minor-casing-width); }
-        [zoom >= 17] { line-width: @minor-z17-width * (1 - 2*@minor-casing-width); }
-        [zoom >= 18] { line-width: @minor-z18-width * (1 - 2*@minor-casing-width); }
-        [zoom >= 19] { line-width: @minor-z19-width * (1 - 2*@minor-casing-width); }
-        [zoom >= 20] { line-width: @minor-z20-width * (1 - 2*@minor-casing-width); }
-
-        line-join: round;
-        line-cap: round;
-      }
-      ['mapnik::geometry_type' = 3] {
-        polygon-fill: @minor-inner;
-      }
-    }
-
-/*    #roads-text[zoom >= 6] {
-      text-name: "[name]";
-      text-face-name: @book-fonts;
-      text-placement: line;
-      text-halo-fill: @minor-lz;
-      [zoom >= 13] {
-        text-halo-fill: @minor-fill;
-      }
-      text-halo-radius: 1.5;
-    }*/
   }
 
   /* service roads */
