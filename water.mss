@@ -2,7 +2,6 @@
 @water_corrected: @water - #301F0B;
 
 #water {
-  
   polygon-fill: @water_corrected;
   ::blur {
     // This attachment creates a shadow effect by creating a
@@ -17,8 +16,3 @@
     polygon-clip: false;
   }
 }
-
-
-//@water: #a0c8f0;
-
-// abd0f4
