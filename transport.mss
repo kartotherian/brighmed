@@ -103,10 +103,20 @@
       }
       #transport_name {
         text-name: "[name]";
-        text-face-name: @book-fonts;
+        text-size: 12;
+        text-fill: #765;
         text-placement: line;
-        text-halo-fill: @motorway-inner;
-        text-halo-radius: 1.5;
+        text-spacing: 200;
+        text-margin: 6;
+        text-repeat-distance: 64;
+        text-min-path-length: 32;
+        text-avoid-edges: true;
+        text-face-name: @book-fonts;
+        text-halo-fill: fadeout(@motorway-inner, 40%);
+        text-halo-radius: 1;
+        [zoom >= 15] {
+          text-size: 13;
+        }
       }
     }
   } // motorway
@@ -162,10 +172,20 @@
       }
       #transport_name {
         text-name: "[name]";
-        text-face-name: @book-fonts;
+        text-size: 12;
+        text-fill: #765;
         text-placement: line;
-        text-halo-fill: @major-inner;
-        text-halo-radius: 1.5;
+        text-spacing: 200;
+        text-margin: 6;
+        text-repeat-distance: 64;
+        text-min-path-length: 32;
+        text-avoid-edges: true;
+        text-face-name: @book-fonts;
+        text-halo-fill: fadeout(@major-inner, 40%);
+        text-halo-radius: 1;
+        [zoom >= 15] {
+          text-size: 13;
+        }
       }
     }
   } // trunk, primary
@@ -191,7 +211,7 @@
         line-join: round;
       }
     }
-    [zoom >= 13] {
+    [zoom >= 12] {
       #transport {
         ::casing {
           [brunnel = 'bridge'][zoom >= 13] {
@@ -219,10 +239,20 @@
       }
       #transport_name {
         text-name: "[name]";
-        text-face-name: @book-fonts;
+        text-size: 12;
+        text-fill: #765;
         text-placement: line;
-        text-halo-fill: @medium-inner;
-        text-halo-radius: 1.5;
+        text-spacing: 200;
+        text-margin: 6;
+        text-repeat-distance: 64;
+        text-min-path-length: 32;
+        text-avoid-edges: true;
+        text-face-name: @book-fonts;
+        text-halo-fill: fadeout(@medium-inner, 40%);
+        text-halo-radius: 1;
+        [zoom >= 15] {
+          text-size: 13;
+        }
       }
     }
   } // secondary, tertiary
@@ -276,10 +306,20 @@
       }
       #transport_name {
         text-name: "[name]";
+        text-size: 12;
+        text-fill: #765;
+        text-placement: line; // fix for areas
+        text-spacing: 200;
+        text-margin: 6;
+        text-repeat-distance: 64;
+        text-min-path-length: 32;
+        text-avoid-edges: true;
         text-face-name: @book-fonts;
-        text-placement: line;
-        text-halo-fill: @minor-inner;
+        text-halo-fill: fadeout(@minor-inner, 40%);
         text-halo-radius: 1.5;
+        [zoom >= 15] {
+          text-size: 13;
+        }
       }
     }
   } // minor
