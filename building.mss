@@ -1,5 +1,8 @@
-// ---------------------------------------------------------------------
-// Buildings 
+/*
+ * This file is part of brighmed, a style for use with Meddo vector tiles
+ * @author Paul Norman <penorman@mac.com>
+ * @copyright 2016 Paul Norman, MIT license
+ */
 
 #building [zoom<=17]{
   // At zoom level 13, only large buildings are included in the

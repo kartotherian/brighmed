@@ -1,3 +1,9 @@
+/*
+ * This file is part of brighmed, a style for use with Meddo vector tiles
+ * @author Paul Norman <penorman@mac.com>
+ * @copyright 2016 Paul Norman, MIT license
+ */
+
 // The correction factor adjusts for the blur on top
 @water_corrected: @water - #301F0B;
 

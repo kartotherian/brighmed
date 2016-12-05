@@ -1,3 +1,10 @@
+/*
+ * This file is part of brighmed, a style for use with Meddo vector tiles
+ * @author Paul Norman <penorman@mac.com>
+ * @copyright 2015-2016 Paul Norman, MIT license
+
+ Derived from previous work in OSM Clear by Paul Norman
+ */
 
 #transport {
   /* Motorways get their own unique styling at all zooms */
