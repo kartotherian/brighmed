@@ -1,6 +1,9 @@
 _prefs:
   mapid: ''
   saveCenter: false
+_properties:
+  transport:
+    "group-by": layer
 scale: 1
 metatile: 1
 interactivity_layer: ''
