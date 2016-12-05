@@ -7,6 +7,27 @@
  */
 
 #transport, #transport_name {
+  /* Trains */
+  [class = 'transit'][zoom >= 10],
+  [class = 'rail'][zoom >= 6] {
+    /* By using ::casing on lower zooms and ::fill on higher zooms, we can
+       reduce the impact of roads parallel to roads hiding them at low zooms,
+       while maintaining a more appropriate ordering at high zooms */
+    #transport {
+      [zoom < 13]::casing,
+      [zoom >= 13]::fill {
+        line-width: 0.4;
+        line-color: #bbb;
+        [zoom>=16] {
+          line-width: 0.75;
+          // Hatching
+          h/line-width: 3;
+          h/line-color: #bbb;
+          h/line-dasharray: 1,31;
+        }
+      }
+    }
+  }
   /* Motorways get their own unique styling at all zooms */
   [class = 'motorway'][zoom >= 6] {
     #transport {
@@ -227,39 +248,39 @@
         }
       }
     }
-  }
-  [zoom >= 13] {
-    #transport {
-      ::casing {
-        [brunnel = 'bridge'][zoom >= 13] {
-          line-color: black;
+    [zoom >= 13] {
+      #transport {
+        ::casing {
+          [brunnel = 'bridge'][zoom >= 13] {
+            line-color: black;
+          }
+        }
+        ::fill {
+          ['mapnik::geometry_type' = 2] {
+            line-color: @minor-inner;
+            line-width: @minor-z13-width * (1 - 2*@minor-casing-width);
+            [zoom >= 14] { line-width: @minor-z14-width * (1 - 2*@minor-casing-width); }
+            [zoom >= 15] { line-width: @minor-z15-width * (1 - 2*@minor-casing-width); }
+            [zoom >= 16] { line-width: @minor-z16-width * (1 - 2*@minor-casing-width); }
+            [zoom >= 17] { line-width: @minor-z17-width * (1 - 2*@minor-casing-width); }
+            [zoom >= 18] { line-width: @minor-z18-width * (1 - 2*@minor-casing-width); }
+            [zoom >= 19] { line-width: @minor-z19-width * (1 - 2*@minor-casing-width); }
+            [zoom >= 20] { line-width: @minor-z20-width * (1 - 2*@minor-casing-width); }
+            line-join: round;
+            line-cap: round;
+          }
+          ['mapnik::geometry_type' = 3] {
+            polygon-fill: @minor-inner;
+          }
         }
       }
-      ::fill {
-        ['mapnik::geometry_type' = 2] {
-          line-color: @minor-inner;
-          line-width: @minor-z13-width * (1 - 2*@minor-casing-width);
-          [zoom >= 14] { line-width: @minor-z14-width * (1 - 2*@minor-casing-width); }
-          [zoom >= 15] { line-width: @minor-z15-width * (1 - 2*@minor-casing-width); }
-          [zoom >= 16] { line-width: @minor-z16-width * (1 - 2*@minor-casing-width); }
-          [zoom >= 17] { line-width: @minor-z17-width * (1 - 2*@minor-casing-width); }
-          [zoom >= 18] { line-width: @minor-z18-width * (1 - 2*@minor-casing-width); }
-          [zoom >= 19] { line-width: @minor-z19-width * (1 - 2*@minor-casing-width); }
-          [zoom >= 20] { line-width: @minor-z20-width * (1 - 2*@minor-casing-width); }
-          line-join: round;
-          line-cap: round;
-        }
-        ['mapnik::geometry_type' = 3] {
-          polygon-fill: @minor-inner;
-        }
+      #transport_name {
+        text-name: "[name]";
+        text-face-name: @book-fonts;
+        text-placement: line;
+        text-halo-fill: @minor-inner;
+        text-halo-radius: 1.5;
       }
-    }
-    #transport_name {
-      text-name: "[name]";
-      text-face-name: @book-fonts;
-      text-placement: line;
-      text-halo-fill: @minor-inner;
-      text-halo-radius: 1.5;
     }
   } // minor
 
@@ -326,35 +347,6 @@
         [zoom >= 17] { line-width: 1.5; }
         line-join: round;
         line-cap: round;
-      }
-    }
-  }
-  /* Trains */
-  // For entirely unknown reasons, the trains have to go at the end of the file.
-  [class = 'transit'][zoom >= 10],
-  [class = 'rail'][zoom >= 6] {
-    /* By using ::casing on lower zooms and ::fill on higher zooms, we can
-       reduce the impact of roads parallel to roads hiding them at low zooms,
-       while maintaining a more appropriate ordering at high zooms */
-    #transport {
-      [zoom < 13] {
-        ::casing {
-          line-width: 0.4;
-          line-color: #bbb;
-        }
-      }
-      [zoom >= 13] {
-        ::fill {
-          line-width: 0.4;
-          line-color: #bbb;
-          [zoom>=16] {
-            line-width: 0.75;
-            // Hatching
-            h/line-width: 3;
-            h/line-color: #bbb;
-            h/line-dasharray: 1,31;
-          }
-        }
       }
     }
   }
