@@ -6,7 +6,7 @@
  Derived from previous work in OSM Clear by Paul Norman
  */
 
-#transport {
+#transport, #transport_name {
   /* Motorways get their own unique styling at all zooms */
   [class = 'motorway'][zoom >= 6] {
     #transport::casing {
@@ -75,6 +75,15 @@
         [zoom >= 20] { line-width: @motorway-z20-width * @motorway-ramp-mult * (1 - 2*@motorway-casing-width); }
       }
     }
+
+    #transport_name[zoom >= 8] {
+      text-name: "[name]";
+      text-face-name: @book-fonts;
+      text-placement: line;
+      text-halo-fill: @motorway-inner;
+      text-halo-radius: 1.5;
+    }
+
   }
 
   /* Major roads */
@@ -120,6 +129,15 @@
       line-join: round;
       line-cap: round;
     }
+
+    #transport_name[zoom >= 9] {
+      text-name: "[name]";
+      text-face-name: @book-fonts;
+      text-placement: line;
+      text-halo-fill: @major-inner;
+      text-halo-radius: 1.5;
+    }
+
   }
 
   /* Medium roads */
@@ -162,6 +180,14 @@
       [zoom >= 20] { line-width: @medium-z20-width * (1 - 2*@medium-casing-width); }
       line-join: round;
       line-cap: round;
+    }
+
+    #transport_name[zoom >= 11] {
+      text-name: "[name]";
+      text-face-name: @book-fonts;
+      text-placement: line;
+      text-halo-fill: @medium-inner;
+      text-halo-radius: 1.5;
     }
   }
 
@@ -206,6 +232,14 @@
       ['mapnik::geometry_type' = 3] {
         polygon-fill: @minor-inner;
       }
+    }
+
+    #transport_name[zoom >= 11] {
+      text-name: "[name]";
+      text-face-name: @book-fonts;
+      text-placement: line;
+      text-halo-fill: @minor-inner;
+      text-halo-radius: 1.5;
     }
   }
 
@@ -252,6 +286,15 @@
         polygon-fill: @service-inner;
       }
     }
+
+    #transport_name[zoom >= 11] {
+      text-name: "[name]";
+      text-face-name: @book-fonts;
+      text-placement: line;
+      text-halo-fill: @service-inner;
+      text-halo-radius: 1.5;
+    }
+
   }
 
   /* paths */
