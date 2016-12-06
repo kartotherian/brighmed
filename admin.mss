@@ -20,8 +20,8 @@
     }
   }
 
-  [admin_level = 3][zoom >= 4],
-  [admin_level = 4][zoom >= 4], {
+  [admin_level = 3][zoom >= 3],
+  [admin_level = 4][zoom >= 3], {
     line-join: round;
     line-color: #9b97a9;
     line-width: 0.3;
