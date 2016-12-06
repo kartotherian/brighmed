@@ -30,9 +30,11 @@ styles:
   - transport-vars.mss
   - transport.mss
   - admin.mss
+  - place.mss
 layers:
   - water
   - building
   - transport
   - boundary
+  - place
   - transport_name
