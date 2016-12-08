@@ -22,3 +22,32 @@
     polygon-clip: false;
   }
 }
+
+#waterway {
+  [class = 'river'][zoom >= 8],
+  [class = 'canal'][zoom >= 12] {
+    line-color: @water;
+    line-cap: round;
+    line-width: 0.5;
+    [zoom >= 12] { line-width: 1; }
+    [zoom >= 14] { line-width: 2; }
+    [zoom >= 16] { line-width: 3; }
+  }
+  [class = 'stream'][zoom >= 12] {
+    line-color: @water;
+    line-cap: round;
+    line-width: 0.4;
+    [zoom >= 13] { line-width: .6; }
+    [zoom >= 14] { line-width: 1; }
+    [zoom >= 16] { line-width: 2; }
+    [zoom >= 18] { line-width: 3; }
+  }
+  [class = 'ditch'][zoom >= 14],
+  [class = 'drain'][zoom >= 14] {
+    line-color: @water;
+    line-cap: round;
+    line-width: 0.5;
+    [zoom >= 16] { line-width: 1; }
+    [zoom >= 18] { line-width: 2; }
+  }
+}

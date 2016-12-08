@@ -32,6 +32,7 @@ styles:
   - admin.mss
   - place.mss
 layers:
+  - waterway
   - water
   - building
   - transport
