@@ -26,12 +26,14 @@ source: "tmsource:///home/user/path/to/meddo"
 styles:
   - style.mss
   - water.mss
+  - land.mss
   - building.mss
   - transport-vars.mss
   - transport.mss
   - admin.mss
   - place.mss
 layers:
+  - park
   - waterway
   - water
   - building
