@@ -32,7 +32,7 @@
   [class = 'motorway'][zoom >= 6] {
     #transport {
       ::casing {
-        line-color: @motorway-outer;
+        line-color: mix(@motorway-outer, @motorway-inner, 50%);
         line-width: @motorway-z6-width;
         [zoom >= 7] { line-width: @motorway-z7-width; }
         [zoom >= 8] { line-width: @motorway-z8-width; }
@@ -66,6 +66,7 @@
     [zoom >= 8] {
       #transport {
         ::casing {
+          line-color: @motorway-outer;
           [brunnel = 'bridge'] {
             line-color: black;
           }
@@ -126,7 +127,7 @@
   [class = 'primary'][zoom >= 7] {
     #transport {
       ::casing {
-        line-color: @major-outer;
+        line-color: mix(@major-outer, @major-inner, 50%);
         line-width: @major-z6-width;
         [zoom >= 7] { line-width: @major-z7-width; }
         [zoom >= 8] { line-width: @major-z8-width; }
@@ -148,6 +149,7 @@
     [zoom >= 9] {
       #transport {
         ::casing {
+          line-color: @major-outer;
           [brunnel = 'bridge'][zoom >= 9] {
             line-color: black;
           }
@@ -195,7 +197,7 @@
   [class = 'tertiary'][zoom >= 11] {
     #transport {
       ::casing {
-        line-color: @medium-outer;
+        line-color: mix(@medium-outer, @medium-inner, 50%);
         line-width: @medium-z9-width;
         [zoom >= 10] { line-width: @medium-z10-width; }
         [zoom >= 11] { line-width: @medium-z11-width; }
@@ -214,6 +216,7 @@
     [zoom >= 12] {
       #transport {
         ::casing {
+          line-color: @medium-outer;
           [brunnel = 'bridge'][zoom >= 13] {
             line-color: black;
           }
@@ -263,7 +266,7 @@
       ::casing {
         ['mapnik::geometry_type' = 2],
         ['mapnik::geometry_type' = 3][zoom >= 16] {
-          line-color: @minor-outer;
+          line-color: mix(@minor-outer, @minor-inner, 50%);
           line-width: @minor-z11-width;
           [zoom >= 12] { line-width: @minor-z12-width; }
           [zoom >= 13] { line-width: @minor-z13-width; }
@@ -281,8 +284,12 @@
     [zoom >= 13] {
       #transport {
         ::casing {
-          [brunnel = 'bridge'][zoom >= 13] {
-            line-color: black;
+          ['mapnik::geometry_type' = 2],
+          ['mapnik::geometry_type' = 3][zoom >= 16] {
+            line-color: @minor-outer;
+            [brunnel = 'bridge'][zoom >= 13] {
+              line-color: black;
+            }
           }
         }
         ::fill {
