@@ -43,7 +43,7 @@ adjust the motorway sizing
 @service-casing-width: 0.17;
 
 // The base size for motorways
-// from width=0.12*e^(0.25*zoom)
+// from width=0.12*e^(0.26*zoom)
 @motorway-z4-width: 0.35;
 @motorway-z5-width: 0.45;
 @motorway-z6-width: 0.55;
