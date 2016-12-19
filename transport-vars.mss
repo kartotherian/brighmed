@@ -45,22 +45,22 @@ adjust the motorway sizing
 // The base size for motorways
 // from width=0.12*e^(0.25*zoom)
 @motorway-z4-width: 0.35;
-@motorway-z5-width: 0.4;
+@motorway-z5-width: 0.45;
 @motorway-z6-width: 0.55;
-@motorway-z7-width: 0.7;
-@motorway-z8-width: 0.9;
-@motorway-z9-width: 1.15;
-@motorway-z10-width: 1.45;
+@motorway-z7-width: 0.75;
+@motorway-z8-width: 0.95;
+@motorway-z9-width: 1.25;
+@motorway-z10-width: 1.6;
 @motorway-z11-width: 2;
-@motorway-z12-width: 2;
-@motorway-z13-width: 3;
-@motorway-z14-width: 4;
-@motorway-z15-width: 5;
-@motorway-z16-width: 7;
-@motorway-z17-width: 8;
-@motorway-z18-width: 11;
-@motorway-z19-width: 14;
-@motorway-z20-width: 18;
+@motorway-z12-width: 3;
+@motorway-z13-width: 4;
+@motorway-z14-width: 5;
+@motorway-z15-width: 6;
+@motorway-z16-width: 8;
+@motorway-z17-width: 10;
+@motorway-z18-width: 13;
+@motorway-z19-width: 17;
+@motorway-z20-width: 22;
 
 
 /********************************************
