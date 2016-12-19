@@ -4,16 +4,17 @@
  * @copyright 2016 Paul Norman, MIT license
  */
 
-// Colours are taken from lighest three colours from ColorBrewer2 YlOrRd8
-@motorway-outer: #c49558;
+// Inner colours are taken from lighest three colours from ColorBrewer2 OrRd6
+// Outer colours are from chroma.js chroma('color').set('lch.l','*.85').set('lch.c','+5');
+@motorway-outer: #de985d;
 @motorway-ramp-outer: @motorway-outer;
-@motorway-inner: #fed976;
+@motorway-inner: #fdbb84;
 @motorway-ramp-inner: @motorway-inner;
 
-@major-outer: #d5b38b;
-@major-inner: #ffeda0;
-@medium-outer: #e4d1bd;
-@medium-inner: #ffffcc;
+@major-outer: #dbaf73;
+@major-inner: #fdd49e;
+@medium-outer: #d9c8a8;
+@medium-inner: #fef0d9;
 
 @minor-outer: #d4d4d4;
 @minor-inner: #ffffff;
