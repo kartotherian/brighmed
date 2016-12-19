@@ -30,17 +30,17 @@ adjust the motorway sizing
 
 // Motorway
 @motorway-ramp-mult: 0.85;
-@motorway-casing-width: 0.12;
+@motorway-casing-width: 0.2;
 
 // These factors scale down smaller roads in relation to motorways
 @major-motorway-factor: 0.95;
-@major-casing-width: 0.13;
+@major-casing-width: 0.21;
 @medium-motorway-factor: 0.88;
-@medium-casing-width: 0.15;
+@medium-casing-width: 0.22;
 @minor-motorway-factor: 0.8;
-@minor-casing-width: 0.18;
+@minor-casing-width: 0.24;
 @service-motorway-factor: 0.6;
-@service-casing-width: 0.17;
+@service-casing-width: 0.26;
 
 // The base size for motorways
 // from width=0.12*e^(0.26*zoom)
