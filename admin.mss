@@ -31,3 +31,16 @@
     [zoom>=12] { line-width: 2; }
   }
 }
+
+#place {
+  [class = 'state'][zoom >= 4] {
+    text-name: [name];
+    text-face-name: @book-fonts;
+    text-placement: point;
+    text-size: 14;
+    text-fill: #765;
+    text-halo-fill: rgba(255, 255, 255, .5);
+    text-halo-radius: 1;
+    text-size: 9;
+  }
+}
