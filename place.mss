@@ -5,7 +5,7 @@
  */
 
 #place {
-  [class = 'city'] {
+  [class = 'city'][zoom < 8] {
     shield-file: url("symbols/place/place-6.svg");
     shield-unlock-image: true;
     shield-name: '[name]';
@@ -18,4 +18,42 @@
     shield-text-dy: 4;
     shield-text-dx: 4;
   }
+
+  [class = 'city'][zoom >= 8][zoom < 17],
+  [class = 'town'][zoom >= 10],
+  [class = 'village'][zoom >= 12] {
+    text-name: '[name]';
+    text-face-name: @book-fonts;
+    text-wrap-before: true;
+    text-fill: #333;
+    text-halo-fill: rgba(255, 255, 255, .5);
+    text-halo-radius: 1;
+    text-size: 14;
+    text-wrap-width: 14*7;
+    text-line-spacing: 14*@line-spacing-adjust;
+    [class = 'city'][zoom >= 10],
+    [class = 'town'][zoom >= 12],
+    [class = 'village'][zoom >= 14] {
+      text-size: 17;
+      text-wrap-width: 17*7;
+      text-line-spacing: 17*@line-spacing-adjust;
+    }
+    [class = 'city'][zoom >= 11],
+    [class = 'town'][zoom >= 13],
+    [class = 'village'][zoom >= 14] {
+      text-size: 18;
+      text-wrap-width: 18*7;
+      text-line-spacing: 18*@line-spacing-adjust;
+    }
+    [class = 'city'][zoom >= 12],
+    [class = 'town'][zoom >= 14],
+    [class = 'village'][zoom >= 15] {
+      text-size: 20;
+      text-wrap-width: 20*7;
+      text-line-spacing: 20*@line-spacing-adjust;
+    }
+  }
+  // TODO: hamlet
+
+  // TODO: subregions
 }

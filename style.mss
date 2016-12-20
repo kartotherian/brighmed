@@ -62,6 +62,7 @@ Medium Sample would cover the BMP PUA with replacement characters, but cannot
 be used because Mapnik does not support SBIT TTF.
 */
 
+@line-spacing-adjust: -0.18;
 /*
 A regular style.
 */
