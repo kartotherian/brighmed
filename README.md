@@ -6,6 +6,7 @@ This is a style based on the cartography of Mapbox's OSM Bright, for use with [M
 
 - Set up and install [Meddo](https://github.com/kartotherian/meddo)
 - Edit project.yml to have the `source` be the location of the tm2source, e.g. `source: tmsource:///home/ubuntu/meddo`
+- Install the Noto family of fonts (e.g. `sudo apt-get install fonts-noto*`)
 - Open with Kosmtik or Mapbox Studio Classic. With Kosmtik this can be done with `kosmtik serve project.yml`
 
 ## License
