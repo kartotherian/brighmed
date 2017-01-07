@@ -105,7 +105,7 @@
       #transport_name {
         text-name: "[name]";
         text-size: 12;
-        text-fill: #765;
+        text-fill: #695948;
         text-placement: line;
         text-spacing: 200;
         text-margin: 6;
@@ -175,7 +175,7 @@
       #transport_name {
         text-name: "[name]";
         text-size: 12;
-        text-fill: #765;
+        text-fill: #695948;
         text-placement: line;
         text-spacing: 200;
         text-margin: 6;
@@ -243,7 +243,7 @@
       #transport_name {
         text-name: "[name]";
         text-size: 12;
-        text-fill: #765;
+        text-fill: #695948;
         text-placement: line;
         text-spacing: 200;
         text-margin: 6;
@@ -314,7 +314,7 @@
       #transport_name {
         text-name: "[name]";
         text-size: 12;
-        text-fill: #765;
+        text-fill: #695948;
         text-placement: line; // fix for areas
         text-spacing: 200;
         text-margin: 6;
