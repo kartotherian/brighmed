@@ -114,7 +114,7 @@
         text-avoid-edges: true;
         text-face-name: @book-fonts;
         text-halo-fill: fadeout(mix(@motorway-inner, #fff, 20%), 20%);
-        text-halo-radius: 1;
+        text-halo-radius: 1.5;
         [zoom >= 15] {
           text-size: 13;
         }
@@ -184,7 +184,7 @@
         text-avoid-edges: true;
         text-face-name: @book-fonts;
         text-halo-fill: fadeout(mix(@major-inner, #fff, 20%), 20%);
-        text-halo-radius: 1;
+        text-halo-radius: 1.5;
         [zoom >= 15] {
           text-size: 13;
         }
@@ -252,7 +252,7 @@
         text-avoid-edges: true;
         text-face-name: @book-fonts;
         text-halo-fill: fadeout(mix(@medium-inner, #fff, 20%), 20%);
-        text-halo-radius: 1;
+        text-halo-radius: 1.5;
         [zoom >= 15] {
           text-size: 13;
         }
