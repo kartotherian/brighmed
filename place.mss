@@ -55,5 +55,28 @@
   }
   // TODO: hamlet
 
-  // TODO: subregions
+  [class = 'suburb'][zoom >= 13],
+  [class = 'suburb'][zoom >= 13] {
+    text-name: '[name]';
+    text-face-name: @bold-fonts;
+    text-fill: #633;
+    text-transform: uppercase;
+    text-size: 10;
+    text-halo-fill: rgba(255, 255, 255, .5);
+    text-halo-radius: 1;
+    text-wrap-before: true;
+    text-wrap-width: 14*7;
+    text-line-spacing: 14*@line-spacing-adjust;
+    [zoom >= 14] {
+      text-size: 11;
+    }
+    [zoom >= 15] {
+      text-size: 12;
+      text-character-spacing: 0.5;
+    }
+    [zoom >= 16] {
+      text-size: 14;
+      text-character-spacing: 1;
+    }
+  }
 }
