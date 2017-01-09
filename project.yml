@@ -33,11 +33,11 @@ styles:
   - admin.mss
   - place.mss
 layers:
+  - park
   - landcover
   - waterway
   - water
   - building
-  - park
   - transport
   - boundary
   - place
