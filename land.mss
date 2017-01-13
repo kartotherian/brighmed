@@ -18,3 +18,9 @@
     polygon-fill: #d8e8c8;
   }
 }
+
+#landuse {
+  [class = 'hospital'][zoom >= 13] {
+    polygon-fill: #fde;
+  }
+}

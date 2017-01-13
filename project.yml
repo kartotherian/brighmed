@@ -35,6 +35,7 @@ styles:
 layers:
   - park
   - landcover
+  - landuse
   - waterway
   - water
   - building
