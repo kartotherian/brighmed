@@ -23,4 +23,9 @@
   [class = 'hospital'][zoom >= 13] {
     polygon-fill: #fde;
   }
+  [class = 'school'][zoom >= 13],
+  [class = 'college'][zoom >= 11],
+  [class = 'university'][zoom >= 11] {
+    polygon-fill: #f0e8f8;
+  }
 }
