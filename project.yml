@@ -30,6 +30,7 @@ styles:
   - building.mss
   - transport-vars.mss
   - transport.mss
+  - transit.mss
   - admin.mss
   - place.mss
 layers:
@@ -41,5 +42,6 @@ layers:
   - building
   - transport
   - boundary
+  - transit_stop
   - place
   - transport_name
