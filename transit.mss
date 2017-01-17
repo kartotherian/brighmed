@@ -6,21 +6,24 @@
 
 #transit_stop {
   [mode = 'rail'] {
-    marker-file: url("symbols/rail-light-11.svg");
-    [station = true] {
+    [station = false][zoom >= 11] {
+      marker-file: url("symbols/rail-light-11.svg");
+    }
+    [station = true][zoom >= 13] {
       marker-file: url("symbols/rail-light-15.svg");
     }
   }
   [mode = 'bus'] {
-    marker-file: url("symbols/bus_stop.12.svg");
-    [station = true] {
+    [station = false][zoom >= 17] {
+      marker-file: url("symbols/bus_stop.12.svg");
+    }
+    [station = true][zoom >= 14] {
+      marker-file: url("symbols/bus_stop.12.svg");
       marker-width: 15; // Scaling is a bad hack that looks blurry
       marker-height: 15;
     }
   }
-  [mode = 'taxi'] {
+  [mode = 'taxi'][zoom >= 16] {
     marker-file: url("symbols/taxi.svg");
-    marker-width: 14;
-    marker-height: 14;
   }
 }
