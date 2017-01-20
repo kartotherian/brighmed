@@ -6,10 +6,10 @@
 
 #transit_stop {
   [mode = 'rail'] {
-    [station = false][zoom >= 11] {
+    [station = false][zoom >= 14] {
       marker-file: url("symbols/maki/rail-11.svg");
     }
-    [station = true][zoom >= 13] {
+    [station = true][zoom >= 14] {
       marker-file: url("symbols/maki/rail-15.svg");
     }
   }
@@ -21,7 +21,7 @@
       marker-file: url("symbols/maki/bus-15.svg");
     }
   }
-  [mode = 'ferry'] {
+  [mode = 'ferry'][zoom >= 14] {
     marker-file: url("symbols/maki/ferry-15.svg");
   }
   [mode = 'taxi'][zoom >= 16] {
