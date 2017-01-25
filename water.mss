@@ -51,3 +51,28 @@
     [zoom >= 18] { line-width: 2; }
   }
 }
+
+#pier {
+  ['mapnik::geometry_type' = 3] {
+    polygon-fill: @land;
+  }
+  ['mapnik::geometry_type' = 2][zoom >= 13] {
+    line-color: @land;
+    line-width: .75;
+    [zoom >= 14] {
+      line-width: 1.25;
+    }
+    [zoom >= 15] {
+      line-width: 2;
+    }
+    [zoom >= 16] {
+      line-width: 3;
+    }
+    [zoom >= 17] {
+      line-width: 4;
+    }
+    [zoom >= 18] {
+      line-width: 5;
+    }
+  }
+}

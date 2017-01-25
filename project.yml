@@ -39,6 +39,7 @@ layers:
   - landuse
   - waterway
   - water
+  - pier
   - building
   - transport
   - boundary
