@@ -30,6 +30,7 @@ styles:
   - building.mss
   - transport-vars.mss
   - transport.mss
+  - air.mss
   - transit.mss
   - admin.mss
   - place.mss
@@ -42,6 +43,7 @@ layers:
   - pier
   - building
   - transport
+  - aeroway
   - boundary
   - transit_stop
   - place
