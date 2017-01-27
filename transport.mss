@@ -103,20 +103,35 @@
         }
       }
       #transport_name {
-        text-name: "[name]";
-        text-size: 12;
-        text-fill: #695948;
-        text-placement: line;
-        text-spacing: 200;
-        text-margin: 6;
-        text-repeat-distance: 64;
-        text-min-path-length: 32;
-        text-avoid-edges: true;
-        text-face-name: @book-fonts;
-        text-halo-fill: fadeout(mix(@motorway-inner, #fff, 20%), 20%);
-        text-halo-radius: 1.5;
-        [zoom >= 15] {
-          text-size: 13;
+        ::shield {
+          [ref_length <= 6] {
+            shield-name: "[ref]";
+            shield-size: 9;
+            shield-line-spacing: -4;
+            shield-face-name: @book-fonts;
+            shield-file: url("symbols/shields/default-[ref_length].svg");
+            shield-placement: line;
+            shield-spacing: 200;
+            shield-min-distance: 80;
+            shield-placement: line;
+          }
+        }
+        ::name {
+          text-name: "[name]";
+          text-size: 12;
+          text-fill: #695948;
+          text-placement: line;
+          text-spacing: 200;
+          text-margin: 6;
+          text-repeat-distance: 64;
+          text-min-path-length: 32;
+          text-avoid-edges: true;
+          text-face-name: @book-fonts;
+          text-halo-fill: fadeout(mix(@motorway-inner, #fff, 20%), 20%);
+          text-halo-radius: 1.5;
+          [zoom >= 15] {
+            text-size: 13;
+          }
         }
       }
     }
@@ -173,20 +188,35 @@
         }
       }
       #transport_name {
-        text-name: "[name]";
-        text-size: 12;
-        text-fill: #695948;
-        text-placement: line;
-        text-spacing: 200;
-        text-margin: 6;
-        text-repeat-distance: 64;
-        text-min-path-length: 32;
-        text-avoid-edges: true;
-        text-face-name: @book-fonts;
-        text-halo-fill: fadeout(mix(@major-inner, #fff, 20%), 20%);
-        text-halo-radius: 1.5;
-        [zoom >= 15] {
-          text-size: 13;
+        ::shield {
+          [ref_length <= 6] {
+            shield-name: "[ref]";
+            shield-size: 9;
+            shield-line-spacing: -4;
+            shield-face-name: @book-fonts;
+            shield-file: url("symbols/shields/default-[ref_length].svg");
+            shield-placement: line;
+            shield-spacing: 200;
+            shield-min-distance: 80;
+            shield-placement: line;
+          }
+        }
+        ::name {
+          text-name: "[name]";
+          text-size: 12;
+          text-fill: #695948;
+          text-placement: line;
+          text-spacing: 200;
+          text-margin: 6;
+          text-repeat-distance: 64;
+          text-min-path-length: 32;
+          text-avoid-edges: true;
+          text-face-name: @book-fonts;
+          text-halo-fill: fadeout(mix(@major-inner, #fff, 20%), 20%);
+          text-halo-radius: 1.5;
+          [zoom >= 15] {
+            text-size: 13;
+          }
         }
       }
     }
@@ -241,20 +271,35 @@
         }
       }
       #transport_name {
-        text-name: "[name]";
-        text-size: 12;
-        text-fill: #695948;
-        text-placement: line;
-        text-spacing: 200;
-        text-margin: 6;
-        text-repeat-distance: 64;
-        text-min-path-length: 32;
-        text-avoid-edges: true;
-        text-face-name: @book-fonts;
-        text-halo-fill: fadeout(mix(@medium-inner, #fff, 20%), 20%);
-        text-halo-radius: 1.5;
-        [zoom >= 15] {
-          text-size: 13;
+        ::shield {
+          [ref_length <= 6] {
+            shield-name: "[ref]";
+            shield-size: 9;
+            shield-line-spacing: -4;
+            shield-face-name: @book-fonts;
+            shield-file: url("symbols/shields/default-[ref_length].svg");
+            shield-placement: line;
+            shield-spacing: 200;
+            shield-min-distance: 80;
+            shield-placement: line;
+          }
+        }
+        ::name {
+          text-name: "[name]";
+          text-size: 12;
+          text-fill: #695948;
+          text-placement: line;
+          text-spacing: 200;
+          text-margin: 6;
+          text-repeat-distance: 64;
+          text-min-path-length: 32;
+          text-avoid-edges: true;
+          text-face-name: @book-fonts;
+          text-halo-fill: fadeout(mix(@medium-inner, #fff, 20%), 20%);
+          text-halo-radius: 1.5;
+          [zoom >= 15] {
+            text-size: 13;
+          }
         }
       }
     }
@@ -312,20 +357,35 @@
         }
       }
       #transport_name {
-        text-name: "[name]";
-        text-size: 12;
-        text-fill: #695948;
-        text-placement: line; // fix for areas
-        text-spacing: 200;
-        text-margin: 6;
-        text-repeat-distance: 64;
-        text-min-path-length: 32;
-        text-avoid-edges: true;
-        text-face-name: @book-fonts;
-        text-halo-fill: fadeout(@minor-inner, 40%);
-        text-halo-radius: 1.5;
-        [zoom >= 15] {
-          text-size: 13;
+        ::shield {
+          [ref_length <= 6] {
+            shield-name: "[ref]";
+            shield-size: 9;
+            shield-line-spacing: -4;
+            shield-face-name: @book-fonts;
+            shield-file: url("symbols/shields/default-[ref_length].svg");
+            shield-placement: line;
+            shield-spacing: 200;
+            shield-min-distance: 80;
+            shield-placement: line;
+          }
+        }
+        ::name {
+          text-name: "[name]";
+          text-size: 12;
+          text-fill: #695948;
+          text-placement: line; // fix for areas
+          text-spacing: 200;
+          text-margin: 6;
+          text-repeat-distance: 64;
+          text-min-path-length: 32;
+          text-avoid-edges: true;
+          text-face-name: @book-fonts;
+          text-halo-fill: fadeout(@minor-inner, 40%);
+          text-halo-radius: 1.5;
+          [zoom >= 15] {
+            text-size: 13;
+          }
         }
       }
     }
