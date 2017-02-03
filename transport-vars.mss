@@ -4,17 +4,17 @@
  * @copyright 2016 Paul Norman, MIT license
  */
 
-// Inner colours are taken from lighest three colours from ColorBrewer2 OrRd6
+// Inner colours based on lighest three colours from ColorBrewer2 OrRd6
 // Outer colours are from chroma.js chroma('color').set('lch.l','*.85').set('lch.c','+5');
 @motorway-outer: #de985d;
 @motorway-ramp-outer: @motorway-outer;
 @motorway-inner: #fdbb84;
 @motorway-ramp-inner: @motorway-inner;
 
-@major-outer: #dbaf73;
-@major-inner: #fdd49e;
-@medium-outer: #d9c8a8;
-@medium-inner: #fef0d9;
+@major-outer: #daac70;
+@major-inner: #fcd09b;
+@medium-outer: #d8c19a;
+@medium-inner: #fce9c9;
 
 @minor-outer: #d4d4d4;
 @minor-inner: #ffffff;
