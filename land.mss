@@ -14,7 +14,7 @@
   [class = 'wood'][zoom >= 5] {
     polygon-fill: #c3d8b0;
   }
-  [class = 'park'][zoom >= 12] {
+  [class = 'park'][zoom >= 11] {
     polygon-fill: #d8e8c8;
   }
 }
