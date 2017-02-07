@@ -68,7 +68,7 @@
         ::casing {
           line-color: @motorway-outer;
           [brunnel = 'bridge'] {
-            line-color: black;
+            line-color: @motorway-bridge-outer;
           }
         }
         ::fill {
@@ -166,7 +166,7 @@
         ::casing {
           line-color: @major-outer;
           [brunnel = 'bridge'] {
-            line-color: black;
+            line-color: @major-bridge-outer;
           }
         }
         ::fill {
@@ -248,7 +248,7 @@
         ::casing {
           line-color: @medium-outer;
           [brunnel = 'bridge'] {
-            line-color: black;
+            line-color: @medium-bridge-outer;
           }
         }
         ::fill {
@@ -333,7 +333,7 @@
           ['mapnik::geometry_type' = 3][zoom >= 16] {
             line-color: @minor-outer;
             [brunnel = 'bridge'] {
-              line-color: black;
+              line-color: @minor-outer;
             }
           }
         }
@@ -416,7 +416,7 @@
       #transport {
         ::casing {
           [brunnel = 'bridge'] {
-            line-color: black;
+            line-color: @service-bridge-outer;
           }
         }
         ::fill {
@@ -430,7 +430,6 @@
             [zoom >= 18] { line-width: @service-z18-width * (1 - 2*@service-casing-width); }
             [zoom >= 19] { line-width: @service-z19-width * (1 - 2*@service-casing-width); }
             [zoom >= 20] { line-width: @service-z20-width * (1 - 2*@service-casing-width); }
-
             line-join: round;
             line-cap: round;
           }
