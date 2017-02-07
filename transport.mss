@@ -165,7 +165,7 @@
       #transport {
         ::casing {
           line-color: @major-outer;
-          [brunnel = 'bridge'][zoom >= 9] {
+          [brunnel = 'bridge'] {
             line-color: black;
           }
         }
@@ -247,7 +247,7 @@
       #transport {
         ::casing {
           line-color: @medium-outer;
-          [brunnel = 'bridge'][zoom >= 13] {
+          [brunnel = 'bridge'] {
             line-color: black;
           }
         }
@@ -332,7 +332,7 @@
           ['mapnik::geometry_type' = 2],
           ['mapnik::geometry_type' = 3][zoom >= 16] {
             line-color: @minor-outer;
-            [brunnel = 'bridge'][zoom >= 13] {
+            [brunnel = 'bridge'] {
               line-color: black;
             }
           }
@@ -415,7 +415,7 @@
     [zoom >= 15] {
       #transport {
         ::casing {
-          [brunnel = 'bridge'][zoom >= 15] {
+          [brunnel = 'bridge'] {
             line-color: black;
           }
         }
