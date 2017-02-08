@@ -15,6 +15,13 @@
       marker-fill: #666;
     }
   }
+  [mode = 'tram'][zoom >= 14] {
+    marker-file: url("symbols/maki/rail-light-11.svg");
+    marker-fill: #666;
+    [zoom >= 17] {
+      marker-file: url("symbols/maki/rail-light-15.svg");
+    }
+  }
   [mode = 'bus'] {
     [station = false][zoom >= 17] {
       marker-file: url("symbols/maki/bus-11.svg");
