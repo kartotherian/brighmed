@@ -33,14 +33,33 @@
 }
 
 #place {
-  [class = 'state'][zoom >= 4] {
-    text-name: [name];
-    text-face-name: @book-fonts;
-    text-placement: point;
-    text-size: 14;
-    text-fill: #765;
+  [class = 'country'][zoom >= 2] {
+    text-name: '[name]';
+    text-face-name: @bold-fonts;
+    text-fill: black;
+    text-size: 10;
     text-halo-fill: rgba(255, 255, 255, .5);
-    text-halo-radius: 1;
-    text-size: 9;
+    text-halo-radius: 1.5;
+    text-wrap-width: 10*6;
+    text-wrap-before: true;
+    text-line-spacing: 10*@line-spacing-adjust;
+    text-margin: 10;
+    [zoom >= 4] {
+      text-size: 12;
+      text-wrap-width: 12*6;
+      text-line-spacing: 12*@line-spacing-adjust;
+    }
+  }
+  [class = 'state'][zoom >= 4] {
+    text-name: '[name]';
+    text-face-name: @book-fonts;
+    text-fill: #765;
+    text-size: 14;
+    text-halo-fill: rgba(255, 255, 255, .5);
+    text-halo-radius: 1.5;
+    text-wrap-width: 14*7;
+    text-wrap-before: true;
+    text-line-spacing: 14*@line-spacing-adjust;
+    text-margin: 20;
   }
 }

@@ -13,8 +13,10 @@
     shield-face-name: @book-fonts;
     shield-placement: point;
     shield-fill: #333;
-    shield-halo-fill: rgba(255, 255, 255, .5);
-    shield-halo-radius: 1;
+    shield-halo-fill: rgba(255, 255, 255, .8);
+    shield-halo-radius: 1.5;
+    shield-wrap-width: 14*7;
+    shield-line-spacing: 14*@line-spacing-adjust;
     shield-text-dy: 4;
     shield-text-dx: 4;
   }
@@ -26,8 +28,8 @@
     text-face-name: @book-fonts;
     text-fill: #333;
     text-size: 14;
-    text-halo-fill: rgba(255, 255, 255, .5);
-    text-halo-radius: 1;
+    text-halo-fill: rgba(255, 255, 255, .8);
+    text-halo-radius: 1.5;
     text-wrap-width: 14*7;
     text-wrap-before: true;
     text-line-spacing: 14*@line-spacing-adjust;
@@ -62,8 +64,8 @@
     text-fill: #633;
     text-transform: uppercase;
     text-size: 10;
-    text-halo-fill: rgba(255, 255, 255, .5);
-    text-halo-radius: 1;
+    text-halo-fill: rgba(255, 255, 255, .8);
+    text-halo-radius: 1.5;
     text-wrap-before: true;
     text-wrap-width: 14*7;
     text-line-spacing: 14*@line-spacing-adjust;
