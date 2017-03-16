@@ -33,6 +33,7 @@
     text-wrap-width: 14*7;
     text-wrap-before: true;
     text-line-spacing: 14*@line-spacing-adjust;
+    text-margin: 10;
     [class = 'city'][zoom >= 10],
     [class = 'town'][zoom >= 12],
     [class = 'village'][zoom >= 14] {
