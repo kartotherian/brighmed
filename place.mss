@@ -19,6 +19,7 @@
     shield-line-spacing: 14*@line-spacing-adjust;
     shield-text-dy: 4;
     shield-text-dx: 4;
+    shield-margin: 10;
   }
 
   [class = 'city'][zoom >= 8][zoom < 17],
