@@ -9,7 +9,7 @@ Map {
 }
 
 @land: #f8f4f0;
-@water: #a0c8f0;
+@water: #b0c9e3;
 
 /*
 The font selection below is taken from OpenStreetMap Carto, where a lot of work

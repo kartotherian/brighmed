@@ -7,15 +7,15 @@
 /* Landuse, landcover, whatever you want to call it */
 
 #park {
-  polygon-fill: #d8e8c8;
+  polygon-fill: #e4efd3;
 }
 
 #landcover {
   [class = 'wood'][zoom >= 5] {
-    polygon-fill: #c3d8b0;
+    polygon-fill: #cbddbd;
   }
   [class = 'park'][zoom >= 11] {
-    polygon-fill: #d8e8c8;
+    polygon-fill: #e4efd3;
   }
 }
 
