@@ -32,7 +32,7 @@
   }
 }
 
-#place {
+#admin_name {
   [class = 'country'][zoom >= 2] {
     text-name: '[name]';
     text-face-name: @bold-fonts;
