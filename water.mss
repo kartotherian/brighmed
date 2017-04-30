@@ -23,6 +23,18 @@
   }
 }
 
+#water_name {
+  text-name: "[name]";
+  text-face-name: @book-fonts;
+  text-fill: darken(@water, 35%);
+  text-size: 14;
+  text-halo-fill: rgba(255, 255, 255, .8);
+  text-halo-radius: 1.5;
+  text-wrap-before: true;
+  text-wrap-width: 14*7;
+  text-line-spacing: 14*@line-spacing-adjust;
+}
+
 #waterway {
   [class = 'river'][zoom >= 8],
   [class = 'canal'][zoom >= 12] {

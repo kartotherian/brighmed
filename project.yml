@@ -46,5 +46,6 @@ layers:
   - aeroway
   - boundary
   - place
+  - water_name
   - transit_stop
   - transport_name
