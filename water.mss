@@ -37,7 +37,7 @@
 
 #waterway {
   [class = 'river'][zoom >= 8],
-  [class = 'canal'][zoom >= 12] {
+  [class = 'canal'][zoom >= 8] {
     line-color: @water;
     line-cap: round;
     line-width: 0.5;
