@@ -45,8 +45,9 @@ layers:
   - transport
   - aeroway
   - boundary
-  - admin_name
+  - country_name
   - place
+  - state_name
   - water_name
   - transit_stop
   - transport_name

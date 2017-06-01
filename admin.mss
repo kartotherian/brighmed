@@ -31,9 +31,8 @@
     [zoom>=12] { line-width: 2; }
   }
 }
-
-#admin_name {
-  [class = 'country'][zoom >= 2][zoom < 16] {
+#country_name {
+  [zoom >= 2][zoom < 16] {
     text-name: '[name]';
     text-face-name: @bold-fonts;
     text-fill: black;
@@ -60,7 +59,10 @@
       text-line-spacing: 12*@line-spacing-adjust;
     }
   }
-  [class = 'state'][zoom >= 4] {
+}
+
+#state_name {
+  [zoom >= 4] {
     text-name: '[name]';
     text-face-name: @book-fonts;
     text-fill: #765;
