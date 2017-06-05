@@ -12,7 +12,7 @@
 
 #landcover {
   [class = 'wood'][zoom >= 5] {
-    polygon-fill: #cbddbd;
+    polygon-fill: #d4e2c0;
   }
   [class = 'park'][zoom >= 11] {
     polygon-fill: #e4efd3;
