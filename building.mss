@@ -4,7 +4,7 @@
  * @copyright 2016 Paul Norman, MIT license
  */
 
-#building [zoom<=17]{
+#building [zoom >= 13][zoom < 18]{
   // At zoom level 13, only large buildings are included in the
   // vector tiles. At zoom level 14+, all buildings are included.
   polygon-fill: darken(@land, 50%);
