@@ -6,23 +6,24 @@
 
 // Inner colours based on lighest three colours from ColorBrewer2 OrRd6
 // Outer colours are from chroma.js chroma('color').set('lch.l','*.85').set('lch.c','+5');
+// bridge colours are from set('lch.l','*.65').set('lch.c','+15');
 @motorway-outer: #de985d;
 @motorway-ramp-outer: @motorway-outer;
-@motorway-bridge-outer: #755941;
+@motorway-bridge-outer: #b56c22;
 @motorway-bridge-ramp-outer: @motorway-bridge-outer;
 @motorway-inner: #fdbb84;
 @motorway-ramp-inner: @motorway-inner;
 
 @major-outer: #daac70;
-@major-bridge-outer: #715b3f;
+@major-bridge-outer: #af7d32;
 @major-inner: #fcd09b;
 
 @medium-outer: #d8c19a;
-@medium-bridge-outer: #6c5c3d;
+@medium-bridge-outer: #a98f58;
 @medium-inner: #fce9c9;
 
 @minor-outer: #d4d4d4;
-@minor-bridge-outer: #5e5e5e;
+@minor-bridge-outer: #9e9e9e;
 @minor-inner: #ffffff;
 
 @service-outer: @minor-outer;
