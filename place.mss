@@ -23,7 +23,7 @@
   }
 
   [class = 'city'][zoom >= 8][zoom < 17],
-  [class = 'town'][zoom >= 10],
+  [class = 'town'][zoom >= 9],
   [class = 'village'][zoom >= 12] {
     text-name: '[name]';
     text-face-name: @book-fonts;
