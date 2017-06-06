@@ -6,21 +6,23 @@
 
 /* Landuse, landcover, whatever you want to call it */
 
+@national-park-color: #447702; // lch(45, 60, 125)
 #park {
   ::fill {
-    polygon-fill: #d8e8c8;
-    opacity: .15;
+    polygon-fill: @national-park-color;
+    opacity: .05;
+    comp-op: darken;
   }
   ::ring {
     a/line-width: 1;
     a/line-offset: -0.5;
-    a/line-color: green;
+    a/line-color: @national-park-color;
     a/line-opacity: 0.15;
     a/line-join: round;
     a/line-cap: round;
     b/line-width: 2;
     b/line-offset: -1;
-    b/line-color: green;
+    b/line-color: @national-park-color;
     b/line-opacity: 0.15;
     b/line-join: round;
     b/line-cap: round;
@@ -35,6 +37,18 @@
       b/line-offset: -3;
     }
   }
+}
+
+#park_name {
+  text-name: "[name]";
+  text-face-name: @book-fonts;
+  text-fill: @national-park-color;
+  text-size: 14;
+  text-halo-fill: rgba(255, 255, 255, .8);
+  text-halo-radius: 1.5;
+  text-wrap-before: true;
+  text-wrap-width: 14*7;
+  text-line-spacing: 14*@line-spacing-adjust;
 }
 
 #landcover {

@@ -49,5 +49,6 @@ layers:
   - place
   - state_name
   - water_name
+  - park_name
   - transit_stop
   - transport_name
