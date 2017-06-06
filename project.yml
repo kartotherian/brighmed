@@ -35,7 +35,6 @@ styles:
   - admin.mss
   - place.mss
 layers:
-  - park
   - landcover
   - landuse
   - waterway
@@ -44,6 +43,7 @@ layers:
   - building
   - transport
   - aeroway
+  - park
   - boundary
   - country_name
   - place
