@@ -161,7 +161,7 @@
         line-join: round;
       }
     }
-    [zoom >= 9] {
+    [zoom >= 10] {
       #transport {
         ::casing {
           line-color: @major-outer;
@@ -171,8 +171,7 @@
         }
         ::fill {
           line-color: @major-inner;
-          line-width: @major-z9-width * (1 - 2*@major-casing-width);
-          [zoom >= 10] { line-width: @major-z10-width * (1 - 2*@major-casing-width); }
+          line-width: @major-z10-width * (1 - 2*@major-casing-width);
           [zoom >= 11] { line-width: @major-z11-width * (1 - 2*@major-casing-width); }
           [zoom >= 12] { line-width: @major-z12-width * (1 - 2*@major-casing-width); }
           [zoom >= 13] { line-width: @major-z13-width * (1 - 2*@major-casing-width); }
