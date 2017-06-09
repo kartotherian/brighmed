@@ -14,21 +14,27 @@
     comp-op: darken;
   }
   ::ring {
-    a/line-width: 1;
-    a/line-offset: -0.5;
+    a/line-width: 0.8;
+    a/line-offset: -0.4;
     a/line-color: @national-park-color;
     a/line-opacity: 0.15;
     a/line-join: round;
     a/line-cap: round;
-    b/line-width: 2;
-    b/line-offset: -1;
+    b/line-width: 1.6;
+    b/line-offset: -0.8;
     b/line-color: @national-park-color;
     b/line-opacity: 0.15;
     b/line-join: round;
     b/line-cap: round;
+    [zoom >= 9] {
+      a/line-width: 1;
+      a/line-offset: -0.5;
+      b/line-width: 2.2;
+      b/line-offset: -1.1;
+    }
     [zoom >= 10] {
-      a/line-width: 2;
-      a/line-offset: -1;
+      a/line-width: 1.8;
+      a/line-offset: -0.9;
       b/line-width: 4;
       b/line-offset: -2;
     }
