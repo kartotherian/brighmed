@@ -32,7 +32,7 @@
   [class = 'motorway'][zoom >= 6] {
     #transport {
       ::casing {
-        line-color: mix(@motorway-outer, @motorway-inner, 50%);
+        line-color: mix(@motorway-outer, @motorway-inner, 20%);
         line-width: @motorway-z6-width;
         [zoom >= 7] { line-width: @motorway-z7-width; }
         [zoom >= 8] { line-width: @motorway-z8-width; }
@@ -142,7 +142,7 @@
   [class = 'primary'][zoom >= 7] {
     #transport {
       ::casing {
-        line-color: mix(@major-outer, @major-inner, 50%);
+        line-color: mix(@major-outer, @major-inner, 20%);
         line-width: @major-z6-width;
         [zoom >= 7] { line-width: @major-z7-width; }
         [zoom >= 8] { line-width: @major-z8-width; }
@@ -227,7 +227,7 @@
   [class = 'tertiary'][zoom >= 11] {
     #transport {
       ::casing {
-        line-color: mix(@medium-outer, @medium-inner, 50%);
+        line-color: mix(@medium-outer, @medium-inner, 20%);
         line-width: @medium-z9-width;
         [zoom >= 10] { line-width: @medium-z10-width; }
         [zoom >= 11] { line-width: @medium-z11-width; }
@@ -311,7 +311,7 @@
       ::casing {
         ['mapnik::geometry_type' = 2],
         ['mapnik::geometry_type' = 3][zoom >= 16] {
-          line-color: mix(@minor-outer, @minor-inner, 50%);
+          line-color: mix(@minor-outer, @minor-inner, 20%);
           line-width: @minor-z11-width;
           [zoom >= 12] { line-width: @minor-z12-width; }
           [zoom >= 13] { line-width: @minor-z13-width; }
