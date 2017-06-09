@@ -311,8 +311,7 @@
         ['mapnik::geometry_type' = 2],
         ['mapnik::geometry_type' = 3][zoom >= 16] {
           line-color: mix(@minor-outer, @minor-inner, 20%);
-          line-width: @minor-z11-width;
-          [zoom >= 12] { line-width: @minor-z12-width; }
+          line-width: @minor-z12-width;
           [zoom >= 13] { line-width: @minor-z13-width; }
           [zoom >= 14] { line-width: @minor-z14-width; }
           [zoom >= 15] { line-width: @minor-z15-width; }
