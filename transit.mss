@@ -11,8 +11,7 @@
   [mode = 'bus'] [station = false][zoom >= 17],
   [mode = 'bus'][station = true][zoom >= 14],
   [mode = 'ferry'][zoom >= 14],
-  [mode = 'taxi'][zoom >= 16]
-  {
+  [mode = 'taxi'][zoom >= 16] {
     shield-unlock-image: true;
     shield-name: '[name]';
     shield-size: 14;
