@@ -17,7 +17,7 @@
     shield-size: 14;
     shield-face-name: @book-fonts;
     shield-placement: point;
-    shield-fill: black;
+    shield-fill: #666;
     shield-halo-fill: rgba(255, 255, 255, .8);
     shield-halo-radius: 1.5;
     shield-wrap-width: 14*7;
@@ -27,7 +27,7 @@
     shield-clip: false;
     
     // A second pass at label placement gets labels where labels+text wouldn't fit
-    fallback/marker-fill: black;
+    fallback/marker-fill: #666;
     fallback/marker-clip: false;
 
     [mode = 'rail'][station = false] {
