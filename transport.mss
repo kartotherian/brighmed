@@ -18,7 +18,7 @@
       [zoom >= 13]::fill {
         line-width: 0.4;
         line-color: #bbb;
-        [zoom>=16] {
+        [zoom >= 16] {
           line-width: 0.75;
           // Hatching
           h/line-width: 3;
