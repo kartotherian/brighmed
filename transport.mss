@@ -305,7 +305,7 @@
   } // secondary, tertiary
 
   /* minor roads */
-  [class = 'minor'][zoom >= 12] {
+  [class = 'minor'][zoom >= 13] {
     #transport {
       ::casing {
         ['mapnik::geometry_type' = 2],
