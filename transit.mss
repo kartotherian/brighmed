@@ -8,10 +8,10 @@
   [mode = 'rail'][station = false][zoom >= 15],
   [mode = 'rail'][station = true][zoom >= 15],
   [mode = 'tram'][zoom >= 15],
-  [mode = 'bus'] [station = false][zoom >= 17],
+  [mode = 'bus'][station = false][zoom >= 17],
   [mode = 'bus'][station = true][zoom >= 15],
   [mode = 'ferry'][zoom >= 15],
-  [mode = 'taxi'][zoom >= 16] {
+  [mode = 'taxi'][zoom >= 17] {
     shield-unlock-image: true;
     shield-name: '[name]';
     // Only show labels at z16+, except for ferries.
@@ -21,15 +21,15 @@
         shield-name: '[name]';
       }
     }
-    shield-size: 12;
+    shield-size: 11;
     shield-face-name: @book-fonts;
     shield-placement: point;
     shield-fill: #666;
     shield-halo-fill: rgba(255, 255, 255, .8);
     shield-halo-radius: 1.5;
-    shield-wrap-width: 12*7;
-    shield-line-spacing: 12*@line-spacing-adjust;
-    shield-text-dy: 11;
+    shield-wrap-width: 11*7;
+    shield-line-spacing: 11*@line-spacing-adjust;
+    shield-text-dy: 10;
     shield-margin: 16;
     shield-clip: false;
     
