@@ -5,6 +5,7 @@
  */
 
 #transit_stop {
+  // Both true and false are needed to match the MSS below
   [mode = 'rail'][station = false][zoom >= 15],
   [mode = 'rail'][station = true][zoom >= 15],
   [mode = 'tram'][zoom >= 15],
