@@ -75,4 +75,8 @@
   [class = 'university'][zoom >= 11] {
     polygon-fill: #ede5f5;
   }
+
+  [class = 'cemetery'][zoom >= 13] {
+    polygon-fill: #e9ead1;
+  }
 }
