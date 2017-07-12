@@ -76,6 +76,16 @@
     polygon-fill: #ede5f5;
   }
 
+  [class = 'retail'][zoom >= 13],
+  [class = 'commercial'][zoom >= 13] {
+    polygon-fill: #f8e6ce; //lch(92,14,80)
+  }
+
+  [class = 'industrial'][zoom >= 13],
+  [class = 'railway'][zoom >= 13] {
+    polygon-fill: #f1e8cd; //lch(92,14,95)
+  }
+
   [class = 'cemetery'][zoom >= 13] {
     polygon-fill: #e9ead1;
   }
