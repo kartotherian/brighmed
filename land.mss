@@ -68,11 +68,11 @@
 
 #landuse {
   [class = 'hospital'][zoom >= 13] {
-    polygon-fill: #fde;
+    polygon-fill: #ffdff0;
   }
   [class = 'school'][zoom >= 13],
   [class = 'college'][zoom >= 11],
   [class = 'university'][zoom >= 11] {
-    polygon-fill: #f0e8f8;
+    polygon-fill: #ede5f5;
   }
 }
