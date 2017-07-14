@@ -88,5 +88,6 @@
 
   [class = 'cemetery'][zoom >= 13] {
     polygon-fill: #e9ead1;
+    polygon-pattern-file: url('symbols/patterns/cemetery.svg');
   }
 }
