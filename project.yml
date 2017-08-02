@@ -50,5 +50,6 @@ layers:
   - state_name
   - water_name
   - park_name
+  - landuse_name
   - transport_name
   - transit_stop
