@@ -75,21 +75,13 @@
   [class = 'university'][zoom >= 11] {
     polygon-fill: #ede5f5;
   }
-
-  [class = 'retail'][zoom >= 13],
-  [class = 'commercial'][zoom >= 13] {
-    polygon-fill: #f8e6ce; //lch(92,14,80)
-  }
-
-  [class = 'industrial'][zoom >= 13],
-  [class = 'railway'][zoom >= 13] {
-    polygon-fill: #f1e8cd; //lch(92,14,95)
-  }
 }
 
 [class = 'retail'][zoom >= 13],
 [class = 'commercial'][zoom >= 13],
-[class = 'cemetery'][zoom >= 13] {
+[class = 'cemetery'][zoom >= 13],
+[class = 'industrial'][zoom >= 13],
+[class = 'railway'][zoom >= 13] {
   #landuse_name {
     text-name: '[name]';
     text-face-name: @book-fonts;
@@ -105,11 +97,23 @@
     [class = 'commercial'] {
       text-fill: #8d795c;
     }
+    [class = 'industrial'],
+    [class = 'railway'] {
+      text-fill: #857c5c; //lch(52,19,95);
+    }
     [class = 'cemetery'] {
       text-fill: #7d7e5f;
     }
   }
   #landuse {
+    [class = 'retail'],
+    [class = 'commercial'] {
+      polygon-fill: #f8e6ce; //lch(92,14,80)
+    }
+    [class = 'industrial'],
+    [class = 'railway'] {
+      polygon-fill: #f1e8cd; //lch(92,14,95)
+    }
     [class = 'cemetery'] {
       polygon-fill: #e9ead1;
       [zoom >= 15] {
