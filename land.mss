@@ -45,16 +45,19 @@
   }
 }
 
-#park_name {
-  text-name: "[name]";
-  text-face-name: @book-fonts;
-  text-fill: @national-park-color;
-  text-size: 14;
-  text-halo-fill: rgba(255, 255, 255, .8);
-  text-halo-radius: 1.5;
-  text-wrap-before: true;
-  text-wrap-width: 14*7;
-  text-line-spacing: 14*@line-spacing-adjust;
+#landcover_name {
+  [class = 'national_park'],
+  [class = 'nature_reserve'] {
+    text-name: "[name]";
+    text-face-name: @book-fonts;
+    text-fill: @national-park-color;
+    text-size: 14;
+    text-halo-fill: rgba(255, 255, 255, .8);
+    text-halo-radius: 1.5;
+    text-wrap-before: true;
+    text-wrap-width: 14*7;
+    text-line-spacing: 14*@line-spacing-adjust;
+  }
 }
 
 #landcover {
@@ -82,7 +85,7 @@
 [class = 'cemetery'][zoom >= 13],
 [class = 'industrial'][zoom >= 13],
 [class = 'railway'][zoom >= 13] {
-  #landuse_name {
+  #landcover_name {
     text-name: '[name]';
     text-face-name: @book-fonts;
     text-size: 13;

@@ -48,8 +48,6 @@ layers:
   - country_name
   - place
   - state_name
-  - water_name
-  - park_name
-  - landuse_name
   - transport_name
+  - landcover_name
   - transit_stop

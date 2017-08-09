@@ -23,7 +23,7 @@
   }
 }
 
-#water_name {
+#landcover_name[class = 'water'] {
   text-name: "[name]";
   text-face-name: @book-fonts;
   text-fill: darken(@water, 35%);
