@@ -67,8 +67,14 @@
       #transport {
         ::casing {
           line-color: @motorway-outer;
-          [brunnel = 'bridge'][zoom >= 14] {
-            line-color: @motorway-bridge-outer;
+          [zoom >= 14] {
+            [brunnel = 'bridge'] {
+              line-color: @motorway-bridge-outer;
+            }
+            [brunnel = 'tunnel'] {
+              line-dasharray: 8,8;
+              line-cap: butt;
+            }
           }
         }
         ::fill {
@@ -165,8 +171,14 @@
       #transport {
         ::casing {
           line-color: @major-outer;
-          [brunnel = 'bridge'][zoom >= 14] {
-            line-color: @major-bridge-outer;
+          [zoom >= 14] {
+            [brunnel = 'bridge'] {
+              line-color: @major-bridge-outer;
+            }
+            [brunnel = 'tunnel'] {
+              line-dasharray: 8,8;
+              line-cap: butt;
+            }
           }
         }
         ::fill {
@@ -246,8 +258,14 @@
       #transport {
         ::casing {
           line-color: @medium-outer;
-          [brunnel = 'bridge'][zoom >= 14] {
-            line-color: @medium-bridge-outer;
+          [zoom >= 14] {
+            [brunnel = 'bridge'] {
+              line-color: @medium-bridge-outer;
+            }
+            [brunnel = 'tunnel'] {
+              line-dasharray: 8,8;
+              line-cap: butt;
+            }
           }
         }
         ::fill {
@@ -330,8 +348,14 @@
           ['mapnik::geometry_type' = 2],
           ['mapnik::geometry_type' = 3][zoom >= 16] {
             line-color: @minor-outer;
-            [brunnel = 'bridge'][zoom >= 14] {
-              line-color: @minor-outer;
+            [zoom >= 14] {
+              [brunnel = 'bridge'] {
+                line-color: @minor-outer;
+              }
+              [brunnel = 'tunnel'] {
+                line-dasharray: 8,8;
+                line-cap: butt;
+              }
             }
           }
         }
@@ -413,8 +437,12 @@
     [zoom >= 15] {
       #transport {
         ::casing {
-          [brunnel = 'bridge'][zoom >= 14] {
+          [brunnel = 'bridge'] {
             line-color: @service-bridge-outer;
+          }
+          [brunnel = 'tunnel'] {
+            line-dasharray: 8,8;
+            line-cap: butt;
           }
         }
         ::fill {
