@@ -1,0 +1,18 @@
+{
+  "name": "@kartotherian/brighmed",
+  "version": "0.0.1",
+  "description": "Style for use with Meddo vector tiles",
+  "main": "./package.json",
+  "repository": "kartotherian/brighmed",
+  "keywords": [
+    "kartotherian",
+    "tilelive"
+  ],
+  "author": "Paul Norman <penorman@mac.com>",
+  "license": "GPL-2.0",
+  "bugs": "https://github.com/kartotherian/brighmed/issues",
+  "publishConfig": {
+    "access": "public"
+  }
+}
+
