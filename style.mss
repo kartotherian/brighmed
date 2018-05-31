@@ -95,7 +95,6 @@ A regular style.
                 "Noto Sans Gujarati UI Regular",
                 "Noto Sans Gurmukhi UI Regular",
                 "Noto Sans Hebrew Regular",
-                "Noto Sans Javanese Regular",
                 "Noto Sans Kannada UI Regular",
                 "Noto Sans Khmer UI Regular",
                 "Noto Sans Lao UI Regular",
