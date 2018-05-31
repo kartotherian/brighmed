@@ -11,6 +11,8 @@ Map {
 @land: #f8f4f0;
 @water: #b0c9e3;
 
+@line-spacing-adjust: -0.15;
+
 /*
 The font selection below is taken from OpenStreetMap Carto, where a lot of work
 has been done selecting appropriate fonts. It has been trimmed to only the
